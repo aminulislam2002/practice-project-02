@@ -71,3 +71,14 @@ nav ul li a {
   background-image: url(../images/Circle\ design.svg);
 }
 /* --------------------- Influencer section styles end ------------------- */
+
+/* -------------------- Logo section style start -------------------- */
+.logo {
+  background-color: green;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px 120px;
+  height: 110px;
+}
+/* -------------------- Logo section style end -------------------- */
