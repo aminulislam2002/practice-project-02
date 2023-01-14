@@ -3,10 +3,12 @@
   padding: 0;
 }
 /* common styels and utilities */
+body {
+  font-family: "Poppins", sans-serif;
+}
 
 /* --------------------- header section styles start -------------------- */
 nav {
-  background-color: red;
   display: flex;
   justify-content: space-between;
   margin: 0px 120px;
@@ -28,7 +30,6 @@ nav ul li a {
 
 /* --------------------- Influencer section styles start ------------------- */
 .influencer {
-  background-color: aqua;
   display: flex;
   justify-content: space-between;
   margin: 0px 120px;
@@ -74,7 +75,6 @@ nav ul li a {
 
 /* -------------------- Logo section style start -------------------- */
 .logo {
-  background-color: green;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -82,3 +82,65 @@ nav ul li a {
   height: 110px;
 }
 /* -------------------- Logo section style end -------------------- */
+
+/* -------------------- products section styles start --------------------- */
+.product-container {
+  margin: 0px 120px;
+}
+.product-heading {
+  font-weight: 600;
+  font-size: 28px;
+  color: #3a3a3a;
+  text-align: center;
+  padding: 50px 0px;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.product-name .product-price {
+  font-weight: 500;
+  font-size: 28px;
+  color: #18191f;
+}
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #5e6366;
+  font-weight: 700;
+  font-size: 14px;
+}
+.fa-star {
+  font-size: 12px;
+}
+.fa-star.filled {
+  color: #ffc014;
+}
+.fa-star.empty {
+  color: #aeaeae;
+}
+.produc-detail {
+  font-weight: 700;
+  font-size: 14px;
+  color: #787885;
+}
+.product-container > div {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+  padding: 50px 0px;
+  color: #e02c6d;
+}
+/* -------------------- products section styles end --------------------- */
