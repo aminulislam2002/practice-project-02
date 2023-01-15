@@ -67,11 +67,21 @@ nav ul li a {
   background-color: #e02c6d;
   border-radius: 41px;
 }
-.influencer-image {
-  width: 50%;
+.camera-image {
+  position: relative;
 }
-.influencer-image img {
-  background-image: url(../images/Circle\ design.svg);
+.camera-image img {
+  width: 440px;
+  height: 414px;
+}
+.camera {
+  position: relative;
+  z-index: 2;
+}
+.backgroud {
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
 /* --------------------- Influencer section styles end ------------------- */
 
@@ -79,10 +89,20 @@ nav ul li a {
 .logo {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  background-color: #0a0826;
   align-items: center;
   margin: 0px 120px;
   height: 110px;
+}
+hr {
+  margin: 0px 120px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.38%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
 }
 /* -------------------- Logo section style end -------------------- */
 
@@ -222,8 +242,11 @@ footer {
 @media only screen and (max-width: 688px) {
   /* header section responsive */
   nav {
-    margin: 0px 0px;
+    margin: 0px auto;
     width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
   }
 
   /* Influencer section responsive */
@@ -233,12 +256,10 @@ footer {
     gap: 50px;
     margin: 0 auto;
   }
-  .influencer-image {
-    max-width: 100%;
-  }
+
   .influencer-info {
-    align-items: center;
     width: 100%;
+    align-items: center;
   }
   .influencer-title {
     font-size: 28px;
@@ -246,7 +267,11 @@ footer {
   .influencer-detail {
     font-size: 14px;
   }
-
+  .camera-image img {
+    width: 257px;
+    height: 257px;
+    padding: 0px 50px;
+  }
   /* logo section responsive */
   .logo {
     grid-template-columns: repeat(4, 1fr);
@@ -254,7 +279,7 @@ footer {
   }
   /* products section responsive */
   .product-container {
-    margin: 0 10px;
+    margin: 0 auto;
   }
   .products {
     grid-template-columns: 1fr;
@@ -264,7 +289,7 @@ footer {
   /* Featured section responsive */
   .feature {
     flex-direction: column-reverse;
-    margin: 0 10px;
+    margin: 0 auto;
     text-align: center;
   }
   .feature-info {
