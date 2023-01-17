@@ -187,6 +187,10 @@ hr {
   flex-direction: column;
   justify-content: center;
 }
+.feature-image img {
+  width: 400px;
+  height: 270px;
+}
 .feature-title {
   font-weight: 700;
   font-size: 38px;
@@ -242,6 +246,7 @@ footer {
 @media only screen and (max-width: 688px) {
   /* header section responsive */
   nav {
+    background-color: red;
     margin: 0px auto;
     width: 100%;
     flex-direction: column;
@@ -251,6 +256,7 @@ footer {
 
   /* Influencer section responsive */
   .influencer {
+    background-color: green;
     flex-direction: column-reverse;
     text-align: center;
     gap: 50px;
@@ -274,11 +280,13 @@ footer {
   }
   /* logo section responsive */
   .logo {
+    background-color: red;
     grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
   }
   /* products section responsive */
   .product-container {
+    background-color: green;
     margin: 0 auto;
   }
   .products {
@@ -288,9 +296,13 @@ footer {
 
   /* Featured section responsive */
   .feature {
+    background-color: red;
     flex-direction: column-reverse;
     margin: 0 auto;
     text-align: center;
+  }
+  .feature-image img {
+    max-width: 100%;
   }
   .feature-info {
     align-items: center;
